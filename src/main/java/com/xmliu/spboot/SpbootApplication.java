@@ -1,0 +1,14 @@
+package com.xmliu.spboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication
+public class SpbootApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpbootApplication.class, args);
+    }
+
+}
