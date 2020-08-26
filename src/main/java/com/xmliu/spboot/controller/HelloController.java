@@ -21,6 +21,6 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(){
         List<Bus> result = busService.queryAll();
-        return "名字：" + result.get(0).getName() + ",This is xmliu " + author.getCsdnUrl();
+        return "名字：" + result.get(0).getName() + ",This will xmliu " + author.getCsdnUrl();
     }
 }

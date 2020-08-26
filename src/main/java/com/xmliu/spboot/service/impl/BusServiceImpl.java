@@ -1,6 +1,7 @@
-package com.xmliu.spboot.service;
+package com.xmliu.spboot.service.impl;
 
 import com.xmliu.spboot.bean.Bus;
+import com.xmliu.spboot.service.BusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class BusServiceImpl implements BusService{
+public class BusServiceImpl implements BusService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
