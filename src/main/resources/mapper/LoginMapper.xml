@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xmliu.spboot.mapper.LoginMapper">
+    <select id="findRoleById" parameterType="java.lang.String" resultType="Role">
+        SELECT * FROM role where id = #{0}
+    </select>
+    <select id="findPermissionById" parameterType="java.lang.String" resultType="Permissions">
+        SELECT * FROM permissions where id = #{0}
+    </select>
+    <select id="findOnePerson" parameterType="java.lang.String" resultType="Person">
+        SELECT * FROM person where userName = #{0}
+    </select>
+</mapper>
