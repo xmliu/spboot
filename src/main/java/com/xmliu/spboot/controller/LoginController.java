@@ -10,6 +10,7 @@ import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Shiro权限控制，示例截图见raw文件夹
@@ -42,7 +43,7 @@ public class LoginController {
     @RequiresRoles("admin")
     @RequiresPermissions("add")
     @RequestMapping("/index")
-    public String index() {
-        return "index!";
+    public ModelAndView index() {
+        return new ModelAndView( "hello");
     }
 }
